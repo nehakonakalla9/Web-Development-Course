@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Navigation Bar</title>
+    <style>
+        :root {
+            --primary-color: green;
+            --secondary-color: rgb(76, 232, 76);
+            --text-color: white;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar Styling */
+        .nav {
+            background-color: var(--primary-color);
+            padding: 15px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 0;
+        }
+
+        ul li {
+            list-style: none;
+            color: var(--text-color);
+            font-size: 18px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        ul li:hover {
+            background-color: darkgreen;
+            border-radius: 5px;
+        }
+
+        /* Content Section */
+        .container {
+            background-color: var(--secondary-color);
+            margin-top: 60px; /* To prevent overlap with the fixed navbar */
+            padding: 20px;
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <!-- Content Section -->
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, rerum! Ducimus praesentium reprehenderit maiores
+        similique porro excepturi magni non quae voluptatibus reiciendis eius voluptate illo animi ad expedita, sint
+        dolor?
+    </div>
+</body>
+
+</html>
